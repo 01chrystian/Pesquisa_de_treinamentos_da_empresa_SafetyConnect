@@ -1,0 +1,17 @@
+br\com\search\functions\safetyconnect\repository\RegistrationRepository.class
+br\com\search\functions\safetyconnect\service\ProfessionService.class
+br\com\search\functions\safetyconnect\model\Training.class
+br\com\search\functions\safetyconnect\repository\ProfessionRepository.class
+br\com\search\functions\safetyconnect\dto\TrainingDTO.class
+br\com\search\functions\safetyconnect\SafetyconnectApplication.class
+br\com\search\functions\safetyconnect\service\TrainingService.class
+br\com\search\functions\safetyconnect\model\Registration.class
+br\com\search\functions\safetyconnect\repository\TrainingRepository.class
+br\com\search\functions\safetyconnect\controller\TrainingController.class
+br\com\search\functions\safetyconnect\controller\RegistrationController.class
+br\com\search\functions\safetyconnect\service\RegistrationService.class
+br\com\search\functions\safetyconnect\controller\ProfessionController.class
+br\com\search\functions\safetyconnect\dto\RegistrationDTO.class
+br\com\search\functions\safetyconnect\dto\ProfessionDTO.class
+br\com\search\functions\safetyconnect\config\TestConfig.class
+br\com\search\functions\safetyconnect\model\Profession.class
