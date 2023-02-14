@@ -45,6 +45,7 @@ public class ProfessionController {
 	@PostMapping(value = "/cadastrar/profissao")
 	public ResponseEntity<String> findRegisterProfession(@RequestBody Profession registrationProfession) throws Exception {
 		String returnOneProfRegistration = service.findRegisterProfession(registrationProfession);
+	
 		if (returnOneProfRegistration != null) {
 			// HttpStatus.CREATED = 201
 			return new ResponseEntity<String>(returnOneProfRegistration, HttpStatus.CREATED);
@@ -63,8 +64,8 @@ public class ProfessionController {
 
 	@CrossOrigin
 	@PatchMapping(value = "/atualizar")
-	public ResponseEntity<String> updateProfessionOrCbo(Profession professionOrCbo) {
-		String returnStatusUpdate = service.updateProfessionOrCbo(professionOrCbo);
+	public ResponseEntity<String> updateProfessionOrCbo(@RequestBody Profession professionOrCbo) {
+		String returnStatusUpdate = service.updateRecordByName(professionOrCbo);
 		return new ResponseEntity<String>(returnStatusUpdate, HttpStatus.OK);
 	}
 }

@@ -74,10 +74,15 @@ public class ProfessionService {
        }
 	}
 	
-	public String updateProfessionOrCbo(Profession profOrCbo) {
-		Optional<Profession> returnStatusUpdateProf = repository.professionOfUpdate(profOrCbo.getDescription(), profOrCbo.getCbo());
-		System.out.println(returnStatusUpdateProf);	
-		return "Atualizado com sucesso!";
+	public String updateRecordByName(Profession profOrCbo) {
+		int returnStatusUpdateProf = repository.updateRecordByName(profOrCbo.getDescription(), profOrCbo.getCbo());
+		if(returnStatusUpdateProf == 1) {
+			return "Atualizado com sucesso!";
+		} else {
+			return "A profissão referente a este CBO ainda não foi cadastrado!";
+		}
+
+	
 	}
 	
 }
